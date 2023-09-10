@@ -1,0 +1,2 @@
+/
+  Link: </index.css>; rel=preload; as=style; type=text/css, </bg.avif>; rel=preload; as=image; type=image/avif, </avatar.webp>; rel=preload; as=image; type=image/webp, </count>; rel=preload; as=image; type=image/svg+xml, </index.js>; rel=preload; as=script; type=application/javascript, </min.js>; rel=preload; as=script; type=application/javascript, </font.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </stats>; rel=preload; as=fetch; type=application/json; crossorigin

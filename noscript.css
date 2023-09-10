@@ -1,0 +1,10 @@
+#main {
+    opacity: 1;
+    margin-bottom: 35vh;
+}
+
+#arrow,
+.js,
+.project .meta>div:not(.lang) {
+    display: none;
+}
