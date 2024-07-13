@@ -323,11 +323,14 @@ main {
     flex-direction: row;
 }
 
-#discord .meta {
-    white-space: nowrap;
+#discord .content .meta {
     max-width: 0;
+}
+
+#discord .meta {
     margin-top: 0;
     margin-left: 14px;
+    white-space: nowrap;
 }
 
 #dot {
@@ -336,6 +339,26 @@ main {
     border-radius: 50%;
     width: .6em;
     height: .6em;
+}
+
+#activity {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (width < 1300px) {
+    #activity {
+        max-width: 260px;
+    }
+}
+
+@media (width < 880px) {
+    #activity {
+        max-width: 290px;
+    }
 }
 
 #discord .rpc {
@@ -363,6 +386,24 @@ main {
     background: var(--image) center/cover no-repeat;
     width: 30px;
     height: 30px;
+}
+
+.rpc .meta div {
+    width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (width < 1300px) {
+    .rpc .meta div {
+        width: 320px;
+    }
+}
+
+@media (width < 880px) {
+    .rpc .meta div {
+        width: 360px;
+    }
 }
 
 #clock {
@@ -565,8 +606,8 @@ footer a:hover {
 
 #os {
     position: fixed;
-    inset: 0 0 0 auto;
     box-sizing: border-box;
+    inset: 0 0 0 auto;
     padding: 4px;
     width: 16px;
 }

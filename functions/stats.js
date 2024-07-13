@@ -30,10 +30,11 @@ export async function onRequestGet({ env, request, waitUntil }) {
 async function getStats(env) {
     const query = `{
         a: repository(owner: "AutumnVN", name: "chino.pages.dev") { stargazers { totalCount } forks { totalCount } }
-        c: repository(owner: "AutumnVN", name: "autumn") { stargazers { totalCount } forks { totalCount } }
-        d: repository(owner: "AutumnVN", name: "highlight") { stargazers { totalCount } forks { totalCount } }
-        b: repository(owner: "AutumnVN", name: "bot") { stargazers { totalCount } forks { totalCount } }
-        e: repository(owner: "Vendicated", name: "Vencord") { stargazers { totalCount } forks { totalCount } }
+        b: repository(owner: "AutumnVN", name: "autumn") { stargazers { totalCount } forks { totalCount } }
+        c: repository(owner: "AutumnVN", name: "highlight") { stargazers { totalCount } forks { totalCount } }
+        d: repository(owner: "AutumnVN", name: "osu-igdl") { stargazers { totalCount } forks { totalCount } }
+        e: repository(owner: "AutumnVN", name: "bot") { stargazers { totalCount } forks { totalCount } }
+        f: repository(owner: "Vendicated", name: "Vencord") { stargazers { totalCount } forks { totalCount } }
 
         z: user(login: "AutumnVN") {
             repositories(first: 100, ownerAffiliations: OWNER) {
